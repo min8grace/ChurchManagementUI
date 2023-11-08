@@ -3,7 +3,8 @@ import axios from "axios";
 import { IMember } from "./types";
 
 const instance = axios.create({
-    baseURL: "https://localhost:5001/"
+    baseURL: "http://churchmanagementapi-dev.eba-ihk4md9j.us-west-2.elasticbeanstalk.com/"
+    // baseURL: "https://localhost:5001/"
 })
 
 // Function to get the stored token from localStorage
