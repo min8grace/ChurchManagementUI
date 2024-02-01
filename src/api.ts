@@ -3,8 +3,8 @@ import axios from "axios";
 import { IMember } from "./types";
 
 const instance = axios.create({
-    baseURL: "http://churchmanagementapi-dev.eba-ihk4md9j.us-west-2.elasticbeanstalk.com/"
-    // baseURL: "https://localhost:5001/"
+    baseURL: "OfferingMgmt-API-Dev-env.eba-ir6mqkcj.us-west-2.elasticbeanstalk.com/"
+    //baseURL: "https://localhost:44356/"
 })
 
 // Function to get the stored token from localStorage
@@ -71,8 +71,10 @@ export const GetOfferingsByDateRange = ({ queryKey }: QueryFunctionContext) => {
 export const getMe = () => {
     const headers = getHeaders();
     // return instance.get(`Auth/GetMe`, { headers }).then((response) => response.data);
+    //console.log("headers", headers);
     const result = instance.get(`Auth/GetMe`, { headers }).then((response) => {
-        //console.log("getMe", response.data);
+
+        console.log("getMe", response.data);
         return response.data
     }).catch((error) => {
         // Handle errors here
