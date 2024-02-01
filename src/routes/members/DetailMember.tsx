@@ -28,7 +28,7 @@ export default function DetailMember() {
             <Avatar name={data?.data.lastName} size={"lg"} />
         </HStack>
         <HStack width={"50%"} >
-            <VStack spacing={5} alignItems={"flex-start"}>
+            <VStack spacing={5} alignItems={"flex-start"} >
                 <Skeleton isLoaded={!isLoading} height={"100%"}><Text fontSize={"sm"} color={"gray.600"}>First Name : {data?.data?.firstMidName}</Text></Skeleton>
                 <Skeleton isLoaded={!isLoading} height={"100%"}><Text fontSize={"sm"} color={"gray.600"}>Last Name : {data?.data?.lastName}</Text></Skeleton>
                 <Skeleton isLoaded={!isLoading} height={"100%"}><Text fontSize={"sm"} color={"gray.600"}>E-mail: {data?.data?.email}</Text></Skeleton>
