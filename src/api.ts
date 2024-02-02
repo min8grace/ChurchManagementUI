@@ -3,7 +3,7 @@ import axios from "axios";
 import { IMember } from "./types";
 
 const instance = axios.create({
-    baseURL: "OfferingMgmt-API-Dev-env.eba-ir6mqkcj.us-west-2.elasticbeanstalk.com/"
+    baseURL: "http://offeringmgmt-api-dev-env.eba-ir6mqkcj.us-west-2.elasticbeanstalk.com/"
     //baseURL: "https://localhost:44356/"
 })
 
